@@ -317,7 +317,6 @@ def main():
                 is_secure=fakes3.scheme == 'fakes3s',
                 host=fakes3.hostname,
                 port=fakes3.port,
-                calling_format=OrdinaryCallingFormat(),
                 **aws_connect_kwargs
             )
         elif is_walrus(s3_url):
